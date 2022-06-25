@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet" />
-        <title>Mountop Creative</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-        <link rel="stylesheet" href="../assets/css/style.css" />
-    </head>
-    <body class="container-fluid vh-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet" />
+    <title>Mountop Creative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body class="container-fluid vh-100">
     <header>
         <nav class="navbar navbar-expand-lg pt-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./pages/quienes.html">
-                    <img src="/assets/img/logo mountop.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="./pages/menu.html">
+                    <img src="../assets/img/logomountop.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top" />
                 </a>
-                <button class="navbar-toggler bg-white justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-white justify-content-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-reset " href="./index.html">Principal</a>
+                            <a class="nav-link text-reset" href="../index.html">Principal</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-reset" aria-current="page" href="./pages/menu.html">Main</a>
@@ -46,38 +52,40 @@
                     </ul>
                 </div>
             </div>
-            <div class="row col-md-12 col-xs-12 col-lg-4">
-                <div class=" d-flex justify-content-end m-auto col-md-4 col-lg-4 col-xs-5">
-                    <img src="./assets/img/MOUNTOP.png" class="img-fluid" alt="">
+            <div class="row col-md-12 justify-content-center col-xs-12 col-lg-4">
+                <div class=" d-flex justify-content-center  col-md-4 col-lg-4 col-xs-3">
+                    <img src="../assets/img/MOUNTOP.png" class="img-fluid w-75" alt="">
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="nosotros">
-        <div class="nosotros__titulo">
-            <img src="../assets/img/contacto.png" alt="Contacto" class="nosotros__titulo__img">
+    <div class="row d-flex flex-column align-items-center  ">
+        <div class="col-8 col-md-6 d-flex justify-content-center">
+            <img src="../assets/img/contacto.png" alt="Contacto" class="w-50 my-4 ">
         </div>
-        <div class="nosotros__descripcion  ">
-            <p class="nosotros__descripcion__p_c">Pongase en contacto con nosotros a traves de nuestras <span> redes
+        <div class=" col-sm-10 col-md-6">
+            <p class="text-center">Pongase en contacto con nosotros a traves de nuestras <span> redes
                     sociales </span> o completando el siguiente <span> formulario </span></p>
         </div>
     </div>
 
-    <main class="">
-        <!-- no se como se completa el action -->
-        <form action="" method="post" class="form">
-            <fieldset>
-                <legend class="form__cosa__legend">Contactanos para asesorarte </legend>
+    <main class=" row d-flex justify-content-center">
+        <div class=" col-sm-10 col-lg-9 mt-4">
+            <!-- no se como se completa el action -->
+            <form data-aos="fade-right" data-aos-duration="2500" action="" method="post" ">
+                <fieldset  class=" d-flex flex-column align-content-center">
+                <legend class="col-12 d-flex justify-content-center text-center text-decoration-underline">Contactanos para
+                    asesorarte </legend>
 
-                <div class="form__cosa">
-                    <label class="form__cosa__label" for="nombre">Nombre</label>
-                    <input class="form__cosa__input" name="nombre" id="nombre" type="text"
+                <div class=" my-1 justify-content-center align-items-center d-flex">
+                    <label class="size-small p-auto fw-semibold" for="nombre">Nombre</label>
+                    <input class="size-small p-2 fw-normal" name="nombre" id="nombre" type="text"
                         placeholder="Nombre o Razon Social" required autocomplete="">
                 </div>
-                <div class="form__cosa">
-                    <label class="form__cosa__label" for="pais ">Pais de residencia</label>
-                    <select class="form__cosa__input" id="pais" name="pais" required>
+                <div class=" my-1 justify-content-center align-items-center d-flex">
+                    <label class="size-small p-auto fw-semibold" for="pais ">Pais de residencia</label>
+                    <select class="size-small p-auto fw-normal w-50" id="pais" name="pais" required>
                         <option value="xx">OTRO</option>
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
@@ -315,50 +323,63 @@
                         <option value="ZW">Zimbabue</option>
                     </select>
                 </div>
-                <div class="form__cosa">
-                    <label class="form__cosa__label" for="tel">Telefono</label>
-                    <input class="form__cosa__input" name="telefono" id="tel" type="tel"
+                <div class=" my-1 justify-content-center align-items-center d-flex">
+                    <label class="size-small p-auto fw-semibold" for="tel">Telefono</label>
+                    <input class="size-small p-auto fw-normal" name="telefono" id="tel" type="tel"
                         placeholder="Telefono sin 0 y sin 15" required autocomplete="">
                 </div>
-                <div class="form__cosa">
-                    <label class="form__cosa__label" for="mail">E-mail</label>
-                    <input class="form__cosa__input" name="email" id="mail" type="email" placeholder="Tu email" required
-                        autocomplete="">
+                <div class=" my-1 justify-content-center align-items-center d-flex">
+                    <label class="size-small p-auto fw-semibold" for="mail">E-mail</label>
+                    <input class="size-small p-auto fw-normal" name="email" id="mail" type="email" placeholder="Tu email"
+                        required autocomplete="">
                 </div>
-                <div class="form__cosa">
-                    <label class="form__cosa__label" for="mje">Mensaje o servicio </label>
-                    <textarea class="form__cosa__input" name="mensaje" id="mje" placeholder="Tu interes"></textarea>
+                <div class=" my-1 justify-content-center align-items-center d-flex">
+                    <label class="size-small p-auto fw-semibold" for="mje">Mensaje o servicio </label>
+                    <textarea class="size-small p-auto fw-normal" name="mensaje" id="mje" placeholder="Tu interes"></textarea>
                 </div>
-                <div class="form__cosa">
-                    <div class="form__cosa__btn">
-                        <button class="btn" type="submit">Enviar</button>
+                <div class=" my-1 justify-content-center align-items-center d-flex">
+                    <div class=" m-2">
+                        <button class="px-3 py-1 btn-secondary" type="submit">Enviar</button>
                     </div>
-                    <div class="form__cosa__btn">
-                        <button class="btn" type="reset">Borrar todo</button>
+                    <div class=" m-2 ">
+                        <button class="px-3 py-1 btn-secondary" type="reset">Borrar todo</button>
                     </div>
                 </div>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
+        </div>
     </main>
-    <section class="red">
-        <section>
-            <a href="https://www.linkedin.com/" target="_blank"><img class="contacto__img"
+    <section class="row justify-content-center my-2">
+        <div class="col-2">
+            <a class="d-flex justify-content-center " href="https://www.linkedin.com/" target="_blank"><img class="w-25"
                     src="../assets/img/linkedin.png" alt="Linkedin mountop"></a>
-        </section>
-        <div>
-            <a href="https://www.instagram.com/mountop.marketing" target="_blank"><img class="contacto__img"
+        </div>
+        <div class="col-2 ">
+            <a class="d-flex justify-content-center " href="https://www.instagram.com/mountop.marketing" target="_blank"><img class="w-25"
                     src="../assets/img/instagram.png" alt="Instagram mountop"></a>
         </div>
-        <div>
-            <a href="https://www.facebook.com/mountop.marketing" target="_blank"><img class="contacto__img"
+        <div class="col-2 ">
+            <a class="d-flex justify-content-center " href="https://www.facebook.com/mountop.marketing" target="_blank"><img class="w-25"
                     src="../assets/img/facebook.png" alt=" Facebbok Mountop"></a>
+        </div>
         </div>
     </section>
 
-    <footer class="contenedor__footer">
-        <p class="footer__p">Enteramente realizado por Mountop</p>
-        <p class="footer__p"> ©2022 Todos los derechos reservados</p>
-    </footer>
+        <footer class="">
+            <nav class="navbar">
+                <div class="container-fluid d-flex justify-content-center ali">
+                    <span class="text-reset"> Enteramente realizado por Mountop </span>
+                    <span class="text-reset"> ©2022 Todos los derechos reservados </span>
+                </div>
+            </nav>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
