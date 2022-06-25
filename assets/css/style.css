@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+span {
+    margin: 0 1ex;
+    font-weight: 700;
+}
+
+.activo {font-weight: 600;}
+
+.size-big{
+    font-size: calc(1.3rem + 9vw);
