@@ -1,139 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Menu Mountop</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet" />
+    <title>Mountop Creative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
-    <div id="top"></div>
-    <header class="indice">
-        <div class="indice__logo">
-            <a href="./menu.html"> <img class="indice__logo__a__img" src="../assets/img/logo mountop.png" alt="Logo Mountop" id="logo"></a>
-            <P class="indice__logo__p">Menu</P>
-        </div>
-        <div class="indice__nombre">
-            <img class="indice__nombre__mountop" src="../assets/img/MOUNTOP.png" alt="Mountop" id="mountop">
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg pt-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-sm-none" href="./menu.html">
+                    <img src="../assets/img/logomountop.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top" />
+                </a>
+                <button class="navbar-toggler bg-white justify-content-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" href="../index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" aria-current="page" href="./pages/menu.html">Main</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" href="./pages/quienes.html">quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset " href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset activo" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row col-md-12 justify-content-center col-xs-12 col-lg-4">
+                <div class=" d-flex justify-content-center  col-md-4 col-lg-4 col-xs-3">
+                    <img src="../assets/img/MOUNTOP.png" class="img-fluid w-75" alt="">
+                </div>
+            </div>
+        </nav>
     </header>
-    
-    <section>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0 d-flex flex-row">
-                <div class="col-md-4">
-                    <img src="../assets/img/COHETE.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title"><img src="../assets/img/xq.png"></h5>
-                        <p class="card-text">En el proceso de escalada todo debe estar <span>planificado</span> y las metas ser claras. Es por eso que la predisposicion, la confianza, el compromiso, la perseverancia y el profesionalismo son
-                        valores que nos movilizan para llevarte hacia arriba.</p>
-                        <p class="card-text"><small class="text-muted">Hoy en día uno de los canales  más importantes de influencia es el digital, por eso es importante estar presente.
-                        Trabajaremos juntos definiendo <span>objetivos</span> y armando un <span>plan de acción</span> para generar  herramientas y tácticas que 
-                        ayudarán al <span>crecimeinto</span> personal o empresarial.</small></p>
+    <main >
+        <div class="w-100">
+            <section class="row justify-content-center w-100">
+                <div class="card bg-black align-items-center mb-3">
+                    <div class="row g-0 d-flex flex-row align-items-center">
+                        <div class="col-md-4 col-sm-4 d-none d-sm-block">
+                            <img src="../assets/img/COHETE.png" class="rounded-start img-fluid" alt="...">
+                        </div>
+                        <div class="col-md-8 col-sm-8 ">
+                            <div class="card-body bg-black">
+                                <div>
+                                    <img class=" w-100" src="../assets/img/xq.png">
+                                </div>
+                                <p class="size-small text-center">En el proceso de escalada todo debe estar
+                                    <span>planificado</span> y
+                                    las metas ser claras. Es por eso que la predisposicion, la confianza, el
+                                    compromiso, la
+                                    perseverancia y el profesionalismo son
+                                    valores que nos movilizan para llevarte hacia arriba.
+                                </p>
+                                <p class="size-small text-center">Hoy en día uno de los canales más importantes de
+                                    influencia es el digital, por eso es importante estar presente.
+                                    Trabajaremos juntos definiendo <span>objetivos</span> y armando un
+                                    <span>plan de acción</span> para generar herramientas y tácticas que
+                                    ayudarán al <span>crecimeinto</span> personal o empresarial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class="w-100" src="https://www.youtube.com/embed/M6gojdqoeAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-    <section class="nosotros" id="servicios">
-        <div class="nosotros__titulo">
-            <img class="nosotros__titulo__img" src="../assets/img/servicios.png" alt="Servicios" id="servicioslink">
+        <div class="w-100 bg-grey">
+            <section class="row justify-content-center w-100">
+                <div class="card bg-black align-items-center mb-3">
+                    <div class="row g-0 d-flex flex-row align-items-center">
+                        <div class="col-md-8 col-sm-8 ">
+                            <div class="card-body bg-black">
+                                <div>
+                                    <img class=" w-100" src="../assets/img/apps.png">
+                                </div>
+                                <p class="size-small text-center">Creamos <span> App Mobile </span>, desde código fuente.</p>
+                                <p class="size-small text-center">Todos pueden llevar tu idea en el bolsillo.</p>
+                                <p class="size-small text-center">Diseños Multi SO </span> para que pueden ser cargados a Ios y a
+                                    Android</p>
+                                <p class="size-small text-center">iseños <span> Responsive </span> que se adaptan a cualquier
+                                    dispositivo</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 d-none d-sm-block">
+                            <img src="../assets/img/CHICA.png" class="rounded-start img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class="w-100" src="https://www.youtube.com/embed/VUHvOto2QPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
         </div>
-        <section class="nosotros" id="apps">
-            <div class="nosotros__titulo" >
-                    <img  class="nosotros__titulo__img" id="appslink" src="../assets/img/apps.png" alt="desarrollo de apps" class="titulo">
-            </div>
-            <div class="nosotros__des">
-                <div class="nosotros__descripcion">
-                    <div class="nosotros__descripcion__p">
-                        <p>Todos pueden llevar tu idea en el bolsillo.</p>
+        <div class="w-100">
+            <section class="row justify-content-center w-100">
+                <div class="card bg-black align-items-center mb-3">
+                    <div class="row g-0 d-flex flex-row align-items-center">
+                        <div class="col-md-4 col-sm-4 d-none d-sm-block">
+                            <img src="../assets/img/PLANTA.png" class="rounded-start img-fluid" alt="...">
+                        </div>
+                        <div class="col-md-8 col-sm-8 ">
+                            <div class="card-body bg-black">
+                                <div>
+                                    <img class=" w-100" src="../assets/img/web.png">
+                                </div>
+                                <p class="size-small text-center">Creacion y diseño de <span> Sitios Web</span> con código propio y
+                                    diseño personalizado,</p>
+                                <p class="size-small text-center">E-market, registros y validaciones</p>
+                                <p class="size-small text-center">SEO para <span> optimizar</span> las visualizaciones.</p>
+                                <p class="size-small text-center">Diseños <span> Responsive</span> que se adaptan a cualquier
+                                    dispositivo, buscador y Sistema
+                                    Operativo.Dominios, registros y hosting.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="nosotros__descripcion__p">
-                        <p>Creamos <span> App Mobile </span>, desde código fuente. </p>
-                    </div>
-                    <div class="nosotros__descripcion__p">
-                        <p>Diseños <span> Responsive </span>  que se adaptan a cualquier dispositivo.</p>
-                    </div>
-                    <div class="nosotros__descripcion__p">
-                        <p> <span> Diseños Multi SO </span>  para que pueden ser cargados a Ios y  a Android </p>
-                    </div>
-                </div>
-                <div class="main__menu">
-                    <img class="menu__img" src="../assets/img/CHICA.png" alt="dibujo de chica con herramientas web">
-                </div>
-            </div>
-            <div class="iframe">
-                <iframe class="iiframe" width="560" height="315" src="https://www.youtube.com/embed/8Qi2RqskXfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section class="nosotros" id="web">
-            <div class="nosotros__titulo" >
-                <img class="nosotros__titulo__img" id="weblink" src="../assets/img/web.png" alt="desarrollo web" class="titulo">
-            </div>
-            <div class="nosotros__des">
-                <div class="nosotros__descripcion">
-                    <div class="nosotros__descripcion__p">    
-                        <p>Creacion y diseño de <span> Sitios Web</span>  con código propio y diseño personalizado,</p>
-                    </div>
-                    <div class="nosotros__descripcion__p">
-                        <p>E-market, registros y validaciones</p>
-                    </div>
-                    <div class="nosotros__descripcion__p">
-                        <p>SEO para <span> optimizar</span> las visualizaciones.</p>
-                    </div>
-                    <div class="nosotros__descripcion__p">
-                        <p>Diseños <span> Responsive</span> que se adaptan a cualquier dispositivo, buscador y Sistema Operativo.Dominios, registros y hosting.</p>
+                    <div class="">
+                        <iframe class="w-100" src="https://www.youtube.com/embed/dzn9Dy1kC5Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="main__menu">
-                    <img class="menu__img" src="../assets/img/PLANTA.png" alt="dibujo de chica con planta con emojis">
-                </div>
-            </div>
-            <div class="iframe">
-                <iframe class="iiframe" width="560" height="315" src="https://www.youtube.com/embed/dzn9Dy1kC5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section class="nosotros" >
-            <div class="nosotros__titulo" >
-                <img  id="redeslink" class="nosotros__titulo__img" src="../assets/img/cm.png" alt="Community management" class="titulo">
-            </div>
-            <div class="nosotros__des">
-                <div class="nosotros__descripcion">
-                    <div class="nosotros__descripcion__p">    
-                        <p>Creacion y planificación de contenido y estrategias de <span>Marketing Digital.</span> </p>
+            </section>
+        </div>
+        <div class="w-100">
+            <section class="row justify-content-center w-100">
+                <div class="card bg-black align-items-center mb-3">
+                    <div class="row g-0 d-flex flex-row align-items-center">
+                        <div class="col-md-8 col-sm-8 ">
+                            <div class="card-body bg-black">
+                                <div>
+                                    <img class=" w-100" src="../assets/img/cm.png">
+                                </div>
+                                <p class="size-small text-center">Creacion y planificación de contenido y estrategias de
+                                    <span>Marketing Digital.</span> </p>
+                                <p class="size-small text-center"><span> Diseño Gráfico</span> propio en basea la imagen visual de
+                                    la marca.</p>
+                                <p class="size-small text-center">Análisis de <span> Métricas e informes</span> periódicos.</p>
+                                <p class="size-small text-center">Gestión de <span> Anuncios</span> en Meta y Google.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 d-none d-sm-block">
+                            <img src="../assets/img/PLANTA.png" class="rounded-start img-fluid" alt="...">
+                        </div>
                     </div>
-                    <div class="nosotros__descripcion__p">
-                        <p><span> Diseño Gráfico</span>  propio en basea la imagen visual de la marca.</p>
-                    </div>
-                    <div class="nosotros__descripcion__p">
-                        <p>Análisis de  <span> Métricas e informes</span>  periódicos.</p>
-                    </div>
-                    <div class="nosotros__descripcion__p"> 
-                        <p>Gestión de  <span> Anuncios</span>  en Meta y Google.</p>
+                    <div class="">
+                        <iframe class=" w-100" src="https://www.youtube.com/embed/1BpcXc7NVCI"
+                            title="Necesito un CM?" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="main__menu">
-                    <img src="../assets/img/COHETE.png" alt="dibujo con persona y cohete" class="menu__img">
-                </div>
-            </div>
-                <div class="iframe">
-                    <iframe class="iiframe" width="560" height="315" src="https://www.youtube.com/embed/1BpcXc7NVCI" title="Necesito un CM?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer class="contenedor__footer">
-        <p class="size_footer" >Enteramente realizado por Mountop</p>
-        <p class="size_footer" > ©2022 Todos los derechos reservados</p>
-    </footer>
 
+
+
+
+
+    <footer class="">
+        <nav class="navbar">
+            <div class="container-fluid d-flex justify-content-center ali">
+                <span class="text-reset"> Enteramente realizado por Mountop </span>
+                <span class="text-reset"> ©2022 Todos los derechos reservados </span>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
