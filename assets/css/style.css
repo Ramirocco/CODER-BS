@@ -26,4 +26,17 @@ span {
 
 .size_footer{font-size: calc(0.40rem + 1vw);}
 
+.grid {display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:    "header header"
+                            "main   aside"
+                            "footer footer"
+}
+
+header {grid-area: bheader;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+aside {grid-area: aside;}
+
 
