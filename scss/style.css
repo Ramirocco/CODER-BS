@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+span {
+  margin: 0 1ex;
+  font-weight: 700;
+}
+
+.activo {
+  font-weight: 600;
+}
+
+.size-big {
+  font-size: calc(1.3rem + 9vw);
+}
+
+.size-small {
+  font-size: calc(0.75rem + 0.5vw);
+}
+
+.size_footer {
+  font-size: calc(0.4rem + 1vw);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: "header header" "main   aside" "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+aside {
+  grid-area: aside;
+}/*# sourceMappingURL=style.css.map */

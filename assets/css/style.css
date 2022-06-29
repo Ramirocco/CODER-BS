@@ -34,9 +34,7 @@ span {
                             "footer footer"
 }
 
-header {grid-area: bheader;}
+header {grid-area: header;}
 main {grid-area: main;}
 footer {grid-area: footer;}
 aside {grid-area: aside;}
-
-
