@@ -1,0 +1,16 @@
+.encabezado { 
+    grid-area: header;
+    .navegar { padding: 10px; margin: 5px; display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+        .logo { display: flex; width: 10%;  justify-content: center; align-items: center;
+            .logoimg{width: 20%; align-items: center;} 
+        }
+        .lista {list-style: none; display: flex; flex-direction: row;
+            li{ margin: 10px; 
+                a{ text-decoration: none; color: white;};
+            }
+        }
+        .nombre { display: flex; justify-content: center; align-items: center; width: 20%; 
+            .nombreimg{width: 20%};
+        }
+    }
+}

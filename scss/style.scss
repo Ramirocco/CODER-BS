@@ -1,20 +1,28 @@
-@import "./reset.scss";
+@import "../scss/utilities/variables";
 
-@import "./all";
+@import "../scss/base/reset";
 
-@import "./fuentes";
+@import "../scss/base/all";
 
-@import "./grids";
+@import "../scss/base/fuentes";
 
-@import "./header";
+@import "../scss/utilities/mixins";
 
-@import "./main";
+@import "../scss/componentes/bootstrap";
 
-@import "./aside";
+@import "../scss/componentes/buttons";
 
-@import "./footer";
+@import "../scss/layout/aside";
 
+@import "../scss/layout/header";
 
+@import "../scss/layout/main";
+
+@import "../scss/layout/aside";
+
+@import "../scss/layout/footer";
+
+@import "../scss/layout/grids";
 
 
 
