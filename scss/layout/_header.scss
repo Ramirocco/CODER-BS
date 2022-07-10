@@ -6,7 +6,7 @@
         }
         .lista {list-style: none; display: flex; flex-direction: row;
             li{ margin: 10px; 
-                a{ text-decoration: none; color: white;};
+                a{ text-decoration: none; color:map-get($map: $pallete, $key: primario);};
             }
         }
         .nombre { display: flex; justify-content: center; align-items: center; width: 20%; 

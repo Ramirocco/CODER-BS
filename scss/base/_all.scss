@@ -1,6 +1,3 @@
 body{
-    background-color: $fondoNegro;
-    color: $letrablanca;
-    font-family: $letrabase;
-    font-weight: $sizeletra400;
+    background-color: map-get($map: $pallete, $key: secundario);
 }

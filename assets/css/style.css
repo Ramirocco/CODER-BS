@@ -1,3 +1,43 @@
+width-1 {
+  width: 10%;
+}
+
+width-2 {
+  width: 20%;
+}
+
+width-3 {
+  width: 30%;
+}
+
+width-4 {
+  width: 40%;
+}
+
+width-5 {
+  width: 50%;
+}
+
+width-6 {
+  width: 60%;
+}
+
+width-7 {
+  width: 70%;
+}
+
+width-8 {
+  width: 80%;
+}
+
+width-9 {
+  width: 90%;
+}
+
+width-10 {
+  width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,34 +46,72 @@
 
 body {
   background-color: #000000;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
 }
 
 .size-big {
+  font-family: "Montserrat";
   font-size: calc(1.3rem + 9vw);
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .size-small {
+  font-family: "Montserrat";
   font-size: calc(0.75rem + 0.5vw);
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .size_footer {
+  font-family: "Montserrat";
   font-size: calc(0.4rem + 1vw);
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .size_title {
+  font-family: "Montserrat";
   font-size: calc(0.8rem + 1vw);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.size_body {
+  font-family: "Montserrat";
+  font-size: auto;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 span {
-  margin: 0 1ex;
+  font-family: "Montserrat";
+  font-size: calc(0.8rem + 1vw);
   font-weight: 700;
+  color: #ffffff;
+  margin: 0 1ex;
 }
 
 .activo {
+  font-family: "Montserrat";
+  font-size: calc(0.8rem + 1vw);
   font-weight: bold;
+  color: #ffffff;
+}
+
+.letratodo {
+  font-family: "montserrat";
+  font-size: auto;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.botones, main .tarjeta .BtnDes .Botn {
+  justify-content: center;
+  align-items: center;
+  background-color: #fad867;
+  padding: 5px 20px;
+  color: #f89041;
+  border-radius: 15px;
 }
 
 aside {
@@ -86,7 +164,7 @@ aside .work .workslogo img {
 }
 .encabezado .navegar .lista li a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 .encabezado .navegar .nombre {
   display: flex;
@@ -145,20 +223,15 @@ main .tarjeta .BtnDes {
   padding: 5px;
   align-items: center;
 }
-main .tarjeta .BtnDes .des {
+main .tarjeta .BtnDes .Botn:hover {
+  color: #ffffff;
+  background-color: #ee7c7c;
+}
+main .tarjeta .des {
   justify-content: center;
 }
-main .tarjeta .BtnDes .des .pdes {
+main .tarjeta .des .pdes {
   text-align: center;
-}
-main .tarjeta .BtnDes .bton {
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-}
-main .tarjeta .BtnDes .bton .botn {
-  padding: 15px 30px;
-  background-color: red;
 }
 
 aside {

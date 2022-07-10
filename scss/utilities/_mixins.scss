@@ -1,0 +1,38 @@
+@mixin letras ($famili:'montserrat', $fsize:16px, $fweight:400, $letracolor:map-get($map: $pallete, $key: primario)) {
+    font-family: $famili;
+    font-size: $fsize;
+    font-weight: $fweight;
+    color: $letracolor;
+}
+
+.size-big {
+    @include letras('Montserrat', calc(1.3rem + 9vw), 400, map-get($map: $pallete, $key: primario));
+}
+
+.size-small {
+    @include letras('Montserrat', calc(0.75rem + 0.5vw), 400, map-get($map: $pallete, $key: primario));
+}
+
+.size_footer {
+    @include letras('Montserrat', calc(0.4rem + 1vw), 400, map-get($map: $pallete, $key: primario));
+}
+
+.size_title {
+    @include letras('Montserrat', calc(0.80rem + 1vw), 400, map-get($map: $pallete, $key: primario));
+}
+
+.size_body {
+    @include letras('Montserrat', auto, 400, map-get($map: $pallete, $key: primario));
+}
+
+span {
+    @include letras('Montserrat', calc(0.80rem + 1vw), 700, map-get($map: $pallete, $key: primario));
+    margin: 0 1ex;
+}
+
+
+.activo {
+    @include letras('Montserrat', calc(0.80rem + 1vw), bold, map-get($map: $pallete, $key: primario));
+}
+
+.letratodo{ @include letras('montserrat',auto ,400 , map-get($map: $pallete, $key: primario));}
