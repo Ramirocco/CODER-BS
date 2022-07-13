@@ -1,7 +1,10 @@
 .grid {display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto  auto;
     grid-template-areas:    "header header"
                             "main   aside"
-                            "footer footer"
+                            "footer footer";
+    @media (max-width: $smartphone) { display: grid;
+
+                            }
 }

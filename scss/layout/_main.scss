@@ -2,40 +2,49 @@ main {
     grid-area: main;        
     flex-direction: column;
     width: 100%;
-    margin: 15px;
-    .tarjeta{
+    .tarjeta{ padding: 5px 20px; margin: 10px;
         .hero {
         display: flex;
         align-items: center;
-            .texto {
+            .texto {@extend .size-title;
         width: 100%;
         text-align: center;
         text-transform: uppercase;
-        font-size: 70px;
         font-weight: bold;
             }}
         .info {
             display: flex;
             align-items: center;
+            justify-content: space-evenly;
             padding: 15px;
             margin: 5px;
-            .imagen {
+            .imagen {width: 230px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+                @media (max-width: $smartphone) { display: none;
+                }
                 .ImgJpg {
                     width: 100%;
                     width: fixed;
                     padding: 15px;
-                }
-            .descripcion {
+                    @media (max-width: $smartphone) { display: none;
+                    }
+                }}
+            .descripcion { @extend .width-5;display: flex;flex-direction:column ;justify-content: space-around;@media (max-width:$smartphone){width: 100%;}
                     padding: 10px;
-                    .p {
+                    .p {@extend .size-small;
                         text-align: center;}
                 }
             }
-        }
+        .SaberyRedes{ display: flex; flex-direction: column-reverse; margin: 15px; 
+                .redes{display: flex; flex-direction: row; justify-content: center;
+                    a{
+                        img{ width: 50px; margin: 1vh;}}}
+                .saber{display: flex; flex-direction: row; justify-content: center; align-items: center; @media (max-width: $smartphone) { flex-direction: column;
+                }
+                    img{width: 180px; margin: 2vh;}}}
         .BtnDes {
             display: flex;
             flex-direction: column;

@@ -9,19 +9,22 @@
     @include letras('Montserrat', calc(1.3rem + 9vw), 400, map-get($map: $pallete, $key: primario));
 }
 
-.size-small {
-    @include letras('Montserrat', calc(0.75rem + 0.5vw), 400, map-get($map: $pallete, $key: primario));
+.size-small{
+    @include letras('Montserrat', calc(1rem + 0.8vw), 400, map-get($map: $pallete, $key: primario));
 }
 
-.size_footer {
-    @include letras('Montserrat', calc(0.4rem + 1vw), 400, map-get($map: $pallete, $key: primario));
+.size-footer {
+    @include letras('Montserrat', calc(0.4rem + 0.5vw), 400, map-get($map: $pallete, $key: primario));
 }
 
-.size_title {
-    @include letras('Montserrat', calc(0.80rem + 1vw), 400, map-get($map: $pallete, $key: primario));
+.size-title {
+    @include letras('Montserrat', calc(2rem + 1.2vw), 400, map-get($map: $pallete, $key: primario));
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.size_body {
+.size-body {
     @include letras('Montserrat', auto, 400, map-get($map: $pallete, $key: primario));
 }
 

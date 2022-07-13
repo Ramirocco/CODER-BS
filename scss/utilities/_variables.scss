@@ -19,5 +19,15 @@ $pallete: (
 
 
 @for $var from 1 through 10 {
-    width-#{$var} {width: $var *10%}
+    .width-#{$var} {width: $var *10%}
+}
+
+$smartphone: 480px;
+$screenmd: 768px;
+
+@media (max-width: $smartphone) {
+    
+}
+@media (max-width: $screenmd) {
+    
 }
