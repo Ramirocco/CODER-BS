@@ -45,15 +45,36 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
 }
 
+.LetterBigUno, .indexmain .indexcenter .animacion .BigUno {
+  font-family: "montserrat";
+  font-size: calc(1rem + 2vw);
+  font-weight: 600;
+  color: #000000;
+}
+
+.LetterBigDos, .indexmain .indexcenter .animacion .BigDos {
+  font-family: "montserrat";
+  font-size: calc(1rem + 0.7vw);
+  font-weight: 400;
+  color: #000000;
+}
+
+.letterboton, .indexmain .indexcenter .animacion button a {
+  font-family: "montserrat";
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 600;
+  color: #ffffff;
+}
+
 .size-big {
   font-family: "Montserrat";
-  font-size: calc(1.3rem + 9vw);
-  font-weight: 400;
+  font-size: calc(1rem + 2vw);
+  font-weight: 600;
   color: #000000;
 }
 
@@ -73,7 +94,7 @@ body {
 
 .size-title, main .tarjeta .hero .texto {
   font-family: "Montserrat";
-  font-size: calc(2rem + 1.2vw);
+  font-size: calc(1rem + 0.4vw);
   font-weight: 400;
   color: #000000;
   width: 100%;
@@ -99,7 +120,7 @@ span {
 .activo {
   font-family: "Montserrat";
   font-size: calc(0.8rem + 1vw);
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -110,12 +131,11 @@ span {
   color: #000000;
 }
 
-.botones, main .tarjeta .BtnDes .Botn {
+.botones, .indexmain .indexcenter .animacion button, main .tarjeta .BtnDes .Botn {
   justify-content: center;
   align-items: center;
-  background-color: #fad867;
+  background-color: #000000;
   padding: 5px 20px;
-  color: #f89041;
   border-radius: 15px;
 }
 
@@ -215,7 +235,7 @@ aside .work .workslogo img {
 }
 .encabezado .navegar li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 .encabezado .nombre {
   display: flex;
@@ -341,7 +361,7 @@ main .tarjeta .BtnDes {
 }
 main .tarjeta .BtnDes .Botn:hover {
   color: #ffffff;
-  background-color: #ee7c7c;
+  background-color: hsl(0deg, 77%, 71%);
 }
 main .tarjeta .des {
   justify-content: center;
@@ -387,11 +407,18 @@ aside .work .workslogo img {
 footer {
   grid-area: footer;
 }
-
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header header" "main   aside" "footer footer";
 }
 @media (max-width: 480px) {
@@ -400,11 +427,34 @@ footer {
   }
 }
 
-main .frasesind {
-  line-height: 680%;
+.bodyindex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
-main .bordeimg {
-  border-radius: 100%;
-  border: 3px solid white;
-  padding: 5px;
+
+.indexmain {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexmain .indexcenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.indexmain .indexcenter .animacion {
+  width: 50vw;
+  margin: 0 0 0 5vw;
+}
+.indexmain .indexcenter .animacion button a {
+  text-decoration: none;
+}
+.indexmain .indexcenter div img {
+  width: 25vw;
+  margin: 0 8vw;
 }/*# sourceMappingURL=style.css.map */

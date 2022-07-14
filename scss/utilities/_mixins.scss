@@ -5,8 +5,14 @@
     color: $letracolor;
 }
 
+.LetterBigUno { @include letras('montserrat',calc(1rem + 2vw) ,600 ,map-get($map: $pallete, $key: secundario ))};
+
+.LetterBigDos { @include letras('montserrat',calc(1rem + 0.7vw) ,400 ,map-get($map: $pallete, $key: secundario ))};
+
+.letterboton { @include letras('montserrat',calc(1rem + 0.2vw), 600, map-get( $map: $pallete, $key: primario) )};
+
 .size-big {
-    @include letras('Montserrat', calc(1.3rem + 9vw), 400, map-get($map: $pallete, $key: secundario));
+    @include letras('Montserrat', calc(1rem + 2vw), 600, map-get($map: $pallete, $key: secundario));
 }
 
 .size-small{
@@ -18,7 +24,7 @@
 }
 
 .size-title {
-    @include letras('Montserrat', calc(2rem + 1.2vw), 400, map-get($map: $pallete, $key: secundario));
+    @include letras('Montserrat', calc(1rem + 0.4vw), 400, map-get($map: $pallete, $key: secundario));
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
@@ -35,7 +41,7 @@ span {
 
 
 .activo {
-    @include letras('Montserrat', calc(0.80rem + 1vw), bold, map-get($map: $pallete, $key: secundario));
+    @include letras('Montserrat', calc(0.80rem + 1vw), 500 , map-get($map: $pallete, $key: secundario));
 }
 
 .letratodo{ @include letras('montserrat',auto ,400 , map-get($map: $pallete, $key: secundario));}

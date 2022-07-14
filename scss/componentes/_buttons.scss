@@ -1,6 +1,5 @@
 .botones {justify-content: center;
     align-items: center;
-    background-color: map-get($map: $pallete, $key: terciario) ;
+    background-color: map-get($map: $pallete, $key: secundario) ;
     padding: 5px 20px;
-    color: map-get($map: $pallete, $key: cuaternario );
     border-radius: 15px;}

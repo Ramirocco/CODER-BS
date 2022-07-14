@@ -1,6 +1,43 @@
-main {
-    .frasesind {line-height: 680%;};
-    .bordeimg {border-radius: 100%;
-    border: 3px solid white;
-padding: 5px;}
+.bodyindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.indexmain {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    .indexcenter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100%;
+        .animacion {
+            width: 50vw;
+            margin: 0 0 0 5vw;
+            .BigUno {
+                @extend .LetterBigUno;
+            }
+            .BigDos {
+                @extend .LetterBigDos;
+            }
+            button {
+                @extend .botones;
+                a {
+                    @extend .letterboton;
+                    text-decoration: none;
+                }
+            }
+        }
+        div {
+            img {
+                width: 25vw;
+                margin: 0 8vw;
+            }
+        }
+    }
 }

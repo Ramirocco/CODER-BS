@@ -42,7 +42,7 @@
             line-height: 1rem;
             a {
                 text-decoration: none;
-                color          : map-get($map: $pallete, $key: primario);
+                color          : map-get($map: $pallete, $key: secundario);
             }
         }
     }
