@@ -1,4 +1,4 @@
-@mixin letras ($famili:'montserrat', $fsize:16px, $fweight:400, $letracolor:map-get($map: $pallete, $key: primario)) {
+@mixin letras ($famili:'montserrat', $fsize:16px, $fweight:400, $letracolor:map-get($map: $pallete, $key: secundario)) {
     font-family: $famili;
     font-size: $fsize;
     font-weight: $fweight;
@@ -6,36 +6,36 @@
 }
 
 .size-big {
-    @include letras('Montserrat', calc(1.3rem + 9vw), 400, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', calc(1.3rem + 9vw), 400, map-get($map: $pallete, $key: secundario));
 }
 
 .size-small{
-    @include letras('Montserrat', calc(1rem + 0.8vw), 400, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', calc(1rem + 0.8vw), 400, map-get($map: $pallete, $key: secundario));
 }
 
 .size-footer {
-    @include letras('Montserrat', calc(0.4rem + 0.5vw), 400, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', calc(0.4rem + 0.5vw), 400, map-get($map: $pallete, $key: secundario));
 }
 
 .size-title {
-    @include letras('Montserrat', calc(2rem + 1.2vw), 400, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', calc(2rem + 1.2vw), 400, map-get($map: $pallete, $key: secundario));
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .size-body {
-    @include letras('Montserrat', auto, 400, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', auto, 400, map-get($map: $pallete, $key: secundario));
 }
 
 span {
-    @include letras('Montserrat', calc(0.80rem + 1vw), 700, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', calc(0.80rem + 1vw), 700, map-get($map: $pallete, $key: secundario));
     margin: 0 1ex;
 }
 
 
 .activo {
-    @include letras('Montserrat', calc(0.80rem + 1vw), bold, map-get($map: $pallete, $key: primario));
+    @include letras('Montserrat', calc(0.80rem + 1vw), bold, map-get($map: $pallete, $key: secundario));
 }
 
-.letratodo{ @include letras('montserrat',auto ,400 , map-get($map: $pallete, $key: primario));}
+.letratodo{ @include letras('montserrat',auto ,400 , map-get($map: $pallete, $key: secundario));}
