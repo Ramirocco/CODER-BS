@@ -5,6 +5,8 @@
     color: $letracolor;
 }
 
+
+
 .LetterBigUno { @include letras('montserrat',calc(1rem + 2vw) ,600 ,map-get($map: $pallete, $key: secundario ))};
 
 .LetterBigDos { @include letras('montserrat',calc(1rem + 0.7vw) ,400 ,map-get($map: $pallete, $key: secundario ))};
@@ -24,7 +26,7 @@
 }
 
 .size-title {
-    @include letras('Montserrat', calc(1rem + 0.4vw), 400, map-get($map: $pallete, $key: secundario));
+    @include letras('Montserrat', calc(2rem + 1.5vw), 400, map-get($map: $pallete, $key: secundario));
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
@@ -45,3 +47,12 @@ span {
 }
 
 .letratodo{ @include letras('montserrat',auto ,400 , map-get($map: $pallete, $key: secundario));}
+
+@mixin bg ($color, $borde,$shadow,$radius){
+    background-color: $color;
+    border: $borde;
+    box-shadow: $shadow;
+    border-radius: $radius;
+}
+
+.bgservicios { @include bg (map-get($map: $pallete, $key: terciario),2px grey solid, 3px, 15px)}

@@ -1,0 +1,13 @@
+
+    .servicios{ display: flex;flex-direction:column;width: 100vw;align-items: center;justify-self:center;padding:5vw;
+        .tituloserv{ display: flex;
+            h2{@extend .size-title; @media (max-width: $smartphone) {text-align: center;}}}
+        div{display: flex; justify-content:center; align-items: center;
+            div{ display: flex; flex-direction: column;
+            img{width: 30vw;}}
+            iframe{width: 20vw;@media (max-width: $smartphone) {width:60vw ;@media (max-width: $smartphone) { display: none;
+            }
+        }}}
+        .pservicios {display: flex; flex-direction: column; @extend .bgservicios; width: 60vw;
+            p{@extend .size-small;text-align: center ; padding: 0 2vw; @media (max-width: $smartphone) { text-align: center;justify-content: start;
+            }}}}

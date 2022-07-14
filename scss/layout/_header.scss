@@ -1,16 +1,11 @@
-.encabezado {width: 100%;;
+.encabezado {width: 100%;
     margin-bottom: 10px;
-    grid-area: header; @media (max-width: $smartphone) {
-        justify-content: space-around;
-    }
     .navegar {
-        padding        : 0px;
-        margin         : 5px;
         display        : flex;
         flex-direction : row;
         align-items    : center;
         justify-content: space-between;
-        @media (max-width: $smartphone) {justify-content:center;}
+        @media (max-width: $smartphone) {height: 15vh; ;justify-content:space-around;}
         .logo {
             display        : flex;
             width          : 10%;
@@ -39,13 +34,13 @@
         li {
             margin     : 0 5px;
             text-align : center;
-            line-height: 1rem;
+            line-height: 1.3rem;
             a {
                 text-decoration: none;
-                color          : map-get($map: $pallete, $key: secundario);
+                color          : map-get($map: $pallete, $key: secundario)
+                ;@media (max-width: $smartphone) {font-size: 20px;
             }
-        }
-    }
+        }}
     .nombre {
         display        : flex;
         justify-content: end;
@@ -56,9 +51,8 @@
             display: block; margin: 15px;
         }
         .nombreimg {
-            width          : 90%;
+            width          : 100%;
             justify-content: end; @media (min-width: $screenmd) {
-            display: block;
         }
     }
-}}
+}}}
