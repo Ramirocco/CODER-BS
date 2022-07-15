@@ -1,0 +1,13 @@
+.maincontacto{
+    div{ 
+        form{ display: flex; flex-direction: column; width: 80vw;
+            fieldset{
+                legend {}
+                div{display: flex; justify-content: center;
+                    label{}
+                    input {}
+                    select{}
+                    textarea{}
+                    .button1{ @extend .botones;}
+                    .button2{ @extend .botones;}
+}}}}}
