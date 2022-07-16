@@ -32,7 +32,8 @@ main {
                     @media (max-width: $smartphone) { display: none;
                     }
                 }}
-            .descripcion { @extend .width-5;display: flex;flex-direction:column ;justify-content: space-around;@media (max-width:$smartphone){width: 100%;}
+            .descripcion { @extend .width-5;display: flex;flex-direction:column ;justify-content: space-around;background-color: map-get($map: $pallete , $key: ultimo);
+                border-radius: 15px; @media (max-width:$smartphone){width: 100%;}
                     padding: 10px;
                     .p {@extend .size-small;
                         text-align: center;}
@@ -53,14 +54,15 @@ main {
             align-items: center;
             .Botn { @extend .botones;
                 &:hover {color: map-get($map: $pallete, $key: primario);
-                background-color: map-get($map: $pallete, $key: ultimo);}
+                background-color: map-get($map: $pallete, $key: cuaternario );}
                 }
             }
             .des {
-                justify-content: center;
+                justify-content: center; margin: 2vw;
                 .pdes {
                     text-align: center;
                 }
             }
     }
 }
+

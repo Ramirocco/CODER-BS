@@ -1,5 +1,6 @@
 .encabezado {width: 100%;
     margin-bottom: 10px;
+    position: sticky;top:0;background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
     .navegar {
         display        : flex;
         flex-direction : row;
@@ -35,7 +36,8 @@
             margin     : 0 5px;
             text-align : center;
             line-height: 1.3rem;
-            a {
+            .activo {@extend #activo; }
+            a { @extend .size-header;
                 text-decoration: none;
                 color          : map-get($map: $pallete, $key: secundario)
                 ;@media (max-width: $smartphone) {font-size: 20px;

@@ -11,3 +11,7 @@
                     .button1{ @extend .botones;}
                     .button2{ @extend .botones;}
 }}}}}
+.SaberyRedesContacto{ display: flex; flex-direction: column-reverse; margin: 15px; 
+    .redes{display: flex; flex-direction: row; justify-content: center;
+        a{
+            img{ width: 50px; margin: 1vh;}}}}

@@ -18,7 +18,7 @@
 }
 
 .size-small{
-    @include letras('Montserrat', calc(1rem + 0.8vw), 400, map-get($map: $pallete, $key: secundario));
+    @include letras('Montserrat', calc(0.7rem + 0.8vw), 400, map-get($map: $pallete, $key: secundario));
 }
 
 .size-footer {
@@ -42,17 +42,26 @@ span {
 }
 
 
-.activo {
-    @include letras('Montserrat', calc(0.80rem + 1vw), 500 , map-get($map: $pallete, $key: secundario));
+#activo {
+    @include letras('Montserrat', calc(0.80rem + 0.9vw), 550 , map-get($map: $pallete, $key: secundario));
+}
+
+.size-header {
+    @include letras('Montserrat', calc(0.6rem + 0.8vw), 400, map-get($map: $pallete, $key: secundario));
 }
 
 .letratodo{ @include letras('montserrat',auto ,400 , map-get($map: $pallete, $key: secundario));}
 
-@mixin bg ($color, $borde,$shadow,$radius){
+@mixin bg ($color,$radius){
     background-color: $color;
-    border: $borde;
-    box-shadow: $shadow;
     border-radius: $radius;
 }
+@mixin bgshad ($webkit, $boxshad, $boxshadow){
+    -webkit-box-shadow: $webkit;
+    -moz-box-shadow: $boxshad;
+    box-shadow: $boxshadow; 
+}
 
-.bgservicios { @include bg (map-get($map: $pallete, $key: terciario),2px grey solid, 3px, 15px)}
+
+.bgservicios { @include bg (map-get($map: $pallete, $key: ultimo) ,40px); @include bgshad(10px 10px 21px 1px rgba(0,0,0,0.27),10px 10px 21px 1px rgba(0,0,0,0.27) ,10px 10px 21px 1px rgba(0,0,0,0.27) )}
+

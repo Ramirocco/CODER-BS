@@ -80,7 +80,7 @@ body {
 
 .size-small, .servicios .pservicios p, main .tarjeta .info .descripcion .p {
   font-family: "Montserrat";
-  font-size: calc(1rem + 0.8vw);
+  font-size: calc(0.7rem + 0.8vw);
   font-weight: 400;
   color: #000000;
 }
@@ -117,10 +117,17 @@ span {
   margin: 0 1ex;
 }
 
-.activo {
+#activo, .encabezado .navegar li .activo {
   font-family: "Montserrat";
-  font-size: calc(0.8rem + 1vw);
-  font-weight: 500;
+  font-size: calc(0.8rem + 0.9vw);
+  font-weight: 550;
+  color: #000000;
+}
+
+.size-header, .encabezado .navegar li a {
+  font-family: "Montserrat";
+  font-size: calc(0.6rem + 0.8vw);
+  font-weight: 400;
   color: #000000;
 }
 
@@ -132,57 +139,64 @@ span {
 }
 
 .bgservicios, .servicios .pservicios {
-  background-color: #fad867;
-  border: 2px grey solid;
-  box-shadow: 3px;
-  border-radius: 15px;
+  background-color: #dbace5;
+  border-radius: 40px;
+  box-shadow: 10px 10px 21px 1px rgba(0, 0, 0, 0.27);
 }
 
-.botones, .indexmain .indexcenter .animacion button, main .tarjeta .BtnDes .Botn {
+.botones, .maincontacto div form fieldset div .button2, .maincontacto div form fieldset div .button1, .indexmain .indexcenter .animacion button, main .tarjeta .BtnDes .Botn {
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: #ffffff;
+  border: #000000 4px solid;
   padding: 5px 20px;
   border-radius: 15px;
 }
+.botones a, .maincontacto div form fieldset div .button2 a, .maincontacto div form fieldset div .button1 a, .indexmain .indexcenter .animacion button a, main .tarjeta .BtnDes .Botn a {
+  color: #000000;
+}
 
-aside {
+.aside {
   border-style: solid;
   border-width: 4px;
-  border-color: #ffffff;
+  border-color: #dbace5;
   border-radius: 10px;
-  grid-area: aside;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 120px 10px;
 }
-@media (max-width: 480px) {
-  aside {
-    grid-area: main;
-  }
+.aside div {
+  align-items: center;
 }
-aside H2 {
+.aside div H2 {
   font-weight: bold;
   margin: 0 10px;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #000000;
+  background-color: #ffffff;
 }
-aside .work {
+.aside div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.aside div .work {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-aside .work .workslogo img {
+.aside div .work .workslogo img {
   width: 15vh;
 }
 .encabezado {
   width: 100%;
   margin-bottom: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .encabezado .navegar {
   display: flex;
@@ -312,6 +326,8 @@ main .tarjeta .info .descripcion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #dbace5;
+  border-radius: 15px;
   padding: 10px;
 }
 @media (max-width: 480px) {
@@ -360,73 +376,75 @@ main .tarjeta .BtnDes {
 }
 main .tarjeta .BtnDes .Botn:hover {
   color: #ffffff;
-  background-color: hsl(0deg, 77%, 71%);
+  background-color: #f89041;
 }
 main .tarjeta .des {
   justify-content: center;
+  margin: 2vw;
 }
 main .tarjeta .des .pdes {
   text-align: center;
 }
 
-aside {
+.aside {
   border-style: solid;
   border-width: 4px;
-  border-color: #ffffff;
+  border-color: #dbace5;
   border-radius: 10px;
-  grid-area: aside;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 120px 10px;
 }
-@media (max-width: 480px) {
-  aside {
-    grid-area: main;
-  }
+.aside div {
+  align-items: center;
 }
-aside H2 {
+.aside div H2 {
   font-weight: bold;
   margin: 0 10px;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #000000;
+  background-color: #ffffff;
 }
-aside .work {
+.aside div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.aside div .work {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-aside .work .workslogo img {
+.aside div .work .workslogo img {
   width: 15vh;
 }
 footer {
   grid-area: footer;
+  width: 100%;
 }
 footer .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100vw;
 }
 @media (min-width: 480px) {
   footer .footer {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 }
 footer .footer p {
-  margin: 0 2vw;
+  padding: 0 2vw;
   text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header header" "main   aside" "footer footer";
+  grid-template-areas: "header" "main" "footer";
 }
 @media (max-width: 480px) {
   .grid {
@@ -510,13 +528,16 @@ footer .footer p {
 .servicios {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 99vw;
   align-items: center;
   justify-self: center;
-  padding: 5vw;
+  padding: 6vw 2vw;
 }
 .servicios .tituloserv {
   display: flex;
+}
+.servicios .tituloserv h2 {
+  padding: 0 0 15px 0;
 }
 @media (max-width: 480px) {
   .servicios .tituloserv h2 {
@@ -531,9 +552,10 @@ footer .footer p {
 .servicios div div {
   display: flex;
   flex-direction: column;
+  margin-right: 2vw;
 }
 .servicios div div img {
-  width: 30vw;
+  width: 23vw;
 }
 .servicios div iframe {
   width: 20vw;
@@ -551,7 +573,9 @@ footer .footer p {
 .servicios .pservicios {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 55vw;
+  padding: 3vh 0;
+  width: 100%;
 }
 .servicios .pservicios p {
   text-align: center;
@@ -562,4 +586,28 @@ footer .footer p {
     text-align: center;
     justify-content: start;
   }
+}
+
+.maincontacto div form {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+.maincontacto div form fieldset div {
+  display: flex;
+  justify-content: center;
+}
+.SaberyRedesContacto {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 15px;
+}
+.SaberyRedesContacto .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.SaberyRedesContacto .redes a img {
+  width: 50px;
+  margin: 1vh;
 }/*# sourceMappingURL=style.css.map */
