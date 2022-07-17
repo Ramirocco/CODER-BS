@@ -50,6 +50,10 @@ body {
   margin: 0;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .LetterBigUno, .indexmain .indexcenter .animacion .BigUno {
   font-family: "montserrat";
   font-size: calc(1rem + 2vw);
@@ -78,7 +82,7 @@ body {
   color: #000000;
 }
 
-.size-small, .Contact .pContact p, .maincontacto .formulario form fieldset div label, .servicios .pservicios p, main .tarjeta .info .descripcion .p {
+.size-small, .Contact .pContact p, .maincontacto .formulario form fieldset div label, .pservicios p, main .tarjeta .info .descripcion .p {
   font-family: "Montserrat";
   font-size: calc(0.7rem + 0.8vw);
   font-weight: 400;
@@ -138,7 +142,7 @@ span {
   color: #000000;
 }
 
-.bgservicios, .Contact .pContact, .maincontacto .formulario, .servicios .pservicios {
+.bgservicios, .Contact .pContact, .maincontacto .formulario, .pservicios, main .tarjeta .info .descripcion {
   background-color: #dbace5;
   border-radius: 40px;
   box-shadow: 10px 10px 21px 1px rgba(0, 0, 0, 0.27);
@@ -176,14 +180,9 @@ span {
 }
 
 .aside {
-  border-style: solid;
-  border-width: 4px;
-  border-color: #dbace5;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 120px;
 }
 .aside div {
   align-items: center;
@@ -191,8 +190,11 @@ span {
 .aside div H2 {
   font-weight: bold;
   margin: 0 10px;
-  display: flex;
-  background-color: #ffffff;
+  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
 }
 .aside div {
   display: flex;
@@ -209,6 +211,11 @@ span {
 .aside div .work .workslogo img {
   width: 15vh;
 }
+#esme {
+  background-color: lightseagreen;
+  padding: 2px;
+}
+
 .encabezado {
   width: 100vw;
   margin-bottom: 10px;
@@ -345,7 +352,6 @@ main .tarjeta .info .descripcion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #dbace5;
   border-radius: 15px;
   padding: 10px;
 }
@@ -407,14 +413,9 @@ main .tarjeta .des .pdes {
 }
 
 .aside {
-  border-style: solid;
-  border-width: 4px;
-  border-color: #dbace5;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 120px;
 }
 .aside div {
   align-items: center;
@@ -422,8 +423,11 @@ main .tarjeta .des .pdes {
 .aside div H2 {
   font-weight: bold;
   margin: 0 10px;
-  display: flex;
-  background-color: #ffffff;
+  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
 }
 .aside div {
   display: flex;
@@ -440,15 +444,23 @@ main .tarjeta .des .pdes {
 .aside div .work .workslogo img {
   width: 15vh;
 }
+#esme {
+  background-color: lightseagreen;
+  padding: 2px;
+}
+
 footer {
   grid-area: footer;
   width: 100vw;
+  padding: o 10px;
+  background-color: #000000;
 }
 footer .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  align-items: center;
 }
 @media (min-width: 480px) {
   footer .footer {
@@ -457,6 +469,8 @@ footer .footer {
 }
 footer .footer p {
   text-align: center;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .grid {
@@ -576,32 +590,20 @@ footer .footer p {
 .servicios div div img {
   width: 23vw;
 }
-.servicios div iframe {
-  width: 20vw;
-}
-@media (max-width: 480px) {
-  .servicios div iframe {
-    width: 60vw;
-  }
-}
-@media (max-width: 480px) and (max-width: 480px) {
-  .servicios div iframe {
-    display: none;
-  }
-}
-.servicios .pservicios {
+
+.pservicios {
   display: flex;
   flex-direction: column;
   width: 55vw;
   padding: 3vh 0;
   width: 100%;
 }
-.servicios .pservicios p {
+.pservicios p {
   text-align: center;
   padding: 0 2vw;
 }
 @media (max-width: 480px) {
-  .servicios .pservicios p {
+  .pservicios p {
     text-align: center;
     justify-content: start;
   }
@@ -695,7 +697,7 @@ footer .footer p {
   margin-right: 2vw;
 }
 .Contact div div img {
-  width: 10gitvw;
+  width: 10vw;
 }
 .Contact .pContact {
   display: flex;

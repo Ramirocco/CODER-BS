@@ -5,10 +5,8 @@
         div{display: flex; justify-content:center; align-items: center;
             div{ display: flex; flex-direction: column; margin-right: 2vw;
             img{width: 23vw;}}
-            iframe{width: 20vw;@media (max-width: $smartphone) {width:60vw ;@media (max-width: $smartphone) { display: none;
             }
-        }}}
+        }
         .pservicios {display: flex; flex-direction: column; @extend .bgservicios; width: 55vw; padding: 3vh 0;width: 100%;
             p{@extend .size-small;text-align: center ; padding: 0 2vw; @media (max-width: $smartphone) { text-align: center;justify-content: start;
             }}}
-        }
