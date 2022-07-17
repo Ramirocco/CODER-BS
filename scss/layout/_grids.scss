@@ -1,6 +1,6 @@
 .grid {display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows:auto 1fr auto; 
+    grid-template-columns: 98vw ;
+    grid-template-rows:auto 1fr auto auto; 
     grid-template-areas:    "header"
                             "main"
                             "footer" ;

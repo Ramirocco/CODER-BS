@@ -78,7 +78,7 @@ body {
   color: #000000;
 }
 
-.size-small, .servicios .pservicios p, main .tarjeta .info .descripcion .p {
+.size-small, .Contact .pContact p, .maincontacto .formulario form fieldset div label, .servicios .pservicios p, main .tarjeta .info .descripcion .p {
   font-family: "Montserrat";
   font-size: calc(0.7rem + 0.8vw);
   font-weight: 400;
@@ -92,7 +92,7 @@ body {
   color: #000000;
 }
 
-.size-title, .servicios .tituloserv h2, main .tarjeta .hero .texto {
+.size-title, .Contact .tituloContact h2, .maincontacto .formulario form fieldset legend, .servicios .tituloserv h2, main .tarjeta .hero .texto {
   font-family: "Montserrat";
   font-size: calc(2rem + 1.5vw);
   font-weight: 400;
@@ -138,13 +138,13 @@ span {
   color: #000000;
 }
 
-.bgservicios, .servicios .pservicios {
+.bgservicios, .Contact .pContact, .maincontacto .formulario, .servicios .pservicios {
   background-color: #dbace5;
   border-radius: 40px;
   box-shadow: 10px 10px 21px 1px rgba(0, 0, 0, 0.27);
 }
 
-.botones, .maincontacto div form fieldset div .button2, .maincontacto div form fieldset div .button1, .indexmain .indexcenter .animacion button, main .tarjeta .BtnDes .Botn {
+.botones, .indexmain .indexcenter .animacion button, main .tarjeta .BtnDes .Botn, .boton2a, .maincontacto .formulario form fieldset div .boton2, .boton1a, .maincontacto .formulario form fieldset div .boton1 {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
@@ -152,8 +152,27 @@ span {
   padding: 5px 20px;
   border-radius: 15px;
 }
-.botones a, .maincontacto div form fieldset div .button2 a, .maincontacto div form fieldset div .button1 a, .indexmain .indexcenter .animacion button a, main .tarjeta .BtnDes .Botn a {
+.botones a, .indexmain .indexcenter .animacion button a, main .tarjeta .BtnDes .Botn a, .boton2a a, .maincontacto .formulario form fieldset div .boton2 a, .boton1a a, .maincontacto .formulario form fieldset div .boton1 a {
   color: #000000;
+}
+
+.boton1a, .maincontacto .formulario form fieldset div .boton1 {
+  background-color: #88d8eb;
+  margin: 15px;
+  padding: 10px 30px;
+}
+.boton1a:hover, .maincontacto .formulario form fieldset div .boton1:hover {
+  background-color: #dbace5;
+}
+
+.boton2a, .maincontacto .formulario form fieldset div .boton2 {
+  background-color: #88d8eb;
+  margin: 15px;
+  padding: 5px 10px;
+  color: red;
+}
+.boton2a:hover, .maincontacto .formulario form fieldset div .boton2:hover {
+  background-color: #dbace5;
 }
 
 .aside {
@@ -164,7 +183,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 120px 10px;
+  margin: 120px;
 }
 .aside div {
   align-items: center;
@@ -191,7 +210,7 @@ span {
   width: 15vh;
 }
 .encabezado {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 10px;
   position: -webkit-sticky;
   position: sticky;
@@ -277,11 +296,11 @@ span {
 main {
   grid-area: main;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
 }
 main .tarjeta {
-  padding: 5px 20px;
-  margin: 10px;
+  width: 100%;
+  padding: 5px 0;
 }
 main .tarjeta .hero {
   display: flex;
@@ -297,8 +316,8 @@ main .tarjeta .info {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 15px;
-  margin: 5px;
+  padding: 15px 0;
+  margin: 5px 0;
 }
 main .tarjeta .info .imagen {
   width: 230px;
@@ -370,20 +389,21 @@ main .tarjeta .SaberyRedes .saber img {
 main .tarjeta .BtnDes {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 5px;
+  margin: 10px 0;
+  padding: 5px 0;
   align-items: center;
 }
 main .tarjeta .BtnDes .Botn:hover {
   color: #ffffff;
-  background-color: #f89041;
+  background-color: #88d8eb;
 }
 main .tarjeta .des {
   justify-content: center;
-  margin: 2vw;
+  margin: 2vw 0;
 }
 main .tarjeta .des .pdes {
   text-align: center;
+  padding-top: 30px;
 }
 
 .aside {
@@ -394,7 +414,7 @@ main .tarjeta .des .pdes {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 120px 10px;
+  margin: 120px;
 }
 .aside div {
   align-items: center;
@@ -422,13 +442,13 @@ main .tarjeta .des .pdes {
 }
 footer {
   grid-area: footer;
-  width: 100%;
+  width: 100vw;
 }
 footer .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
+  justify-content: space-around;
+  width: 100%;
 }
 @media (min-width: 480px) {
   footer .footer {
@@ -436,14 +456,13 @@ footer .footer {
   }
 }
 footer .footer p {
-  padding: 0 2vw;
   text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 98vw;
+  grid-template-rows: auto 1fr auto auto;
   grid-template-areas: "header" "main" "footer";
 }
 @media (max-width: 480px) {
@@ -588,14 +607,49 @@ footer .footer p {
   }
 }
 
-.maincontacto div form {
+.maincontacto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.maincontacto .formulario {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #88d8eb;
+}
+.maincontacto .formulario form {
   display: flex;
   flex-direction: column;
   width: 80vw;
 }
-.maincontacto div form fieldset div {
+.maincontacto .formulario form fieldset {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.maincontacto .formulario form fieldset legend {
+  text-align: center;
+}
+.maincontacto .formulario form fieldset div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontacto .formulario form fieldset div label {
+  width: 40%;
+}
+.maincontacto .formulario form fieldset div input {
+  width: 50%;
+}
+.maincontacto .formulario form fieldset div select {
+  width: 50%;
+}
+.maincontacto .formulario form fieldset div textarea {
+  width: 50%;
 }
 .SaberyRedesContacto {
   display: flex;
@@ -610,4 +664,52 @@ footer .footer p {
 .SaberyRedesContacto .redes a img {
   width: 50px;
   margin: 1vh;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  align-items: center;
+  justify-self: center;
+}
+.Contact .tituloContact {
+  display: flex;
+}
+.Contact .tituloContact h2 {
+  padding: 0 0 15px 0;
+}
+@media (max-width: 480px) {
+  .Contact .tituloContact h2 {
+    text-align: center;
+  }
+}
+.Contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact div div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2vw;
+}
+.Contact div div img {
+  width: 10gitvw;
+}
+.Contact .pContact {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+  padding: 3vh 0;
+}
+.Contact .pContact p {
+  text-align: center;
+  padding: 0 2vw;
+}
+@media (max-width: 480px) {
+  .Contact .pContact p {
+    text-align: center;
+    justify-content: start;
+  }
 }/*# sourceMappingURL=style.css.map */
