@@ -201,6 +201,7 @@ span {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .aside div .work {
   display: flex;
@@ -434,6 +435,7 @@ main .tarjeta .des .pdes {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .aside div .work {
   display: flex;
