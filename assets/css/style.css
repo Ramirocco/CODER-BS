@@ -212,6 +212,13 @@ span {
 .aside div .work .workslogo img {
   width: 15vh;
 }
+@media (max-width: 480px) {
+  .aside div .work p {
+    display: none;
+    text-align: center;
+  }
+}
+
 #esme {
   background-color: lightseagreen;
   padding: 2px;
@@ -300,6 +307,80 @@ span {
 .encabezado .navegar .nombre .nombreimg {
   width: 100%;
   justify-content: end;
+}
+.nav__input {
+  display: none;
+}
+
+.nav__label {
+  display: none;
+}
+
+.nav__item {
+  color: black;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.nav__item::after {
+  content: "";
+  display: block;
+  background: white;
+  height: 3px;
+  width: 90%;
+  margin-top: 3px;
+  -webkit-clip-path: var(--clippy);
+          clip-path: var(--clippy);
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  color: black;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+@media (max-width: 760px) {
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    text-decoration: underline;
+    transition: -webkit-clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+  }
+  .nav__item {
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .nav__input:checked + .nav__menu {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+    background-color: #fad867;
+  }
 }
 main {
   grid-area: main;
@@ -446,6 +527,13 @@ main .tarjeta .des .pdes {
 .aside div .work .workslogo img {
   width: 15vh;
 }
+@media (max-width: 480px) {
+  .aside div .work p {
+    display: none;
+    text-align: center;
+  }
+}
+
 #esme {
   background-color: lightseagreen;
   padding: 2px;
@@ -676,6 +764,7 @@ footer .footer p {
   width: 99vw;
   align-items: center;
   justify-self: center;
+  margin-top: 5px;
 }
 .Contact .tituloContact {
   display: flex;
@@ -700,6 +789,11 @@ footer .footer p {
 }
 .Contact div div img {
   width: 10vw;
+}
+@media (max-width: 480px) {
+  .Contact div div img {
+    display: none;
+  }
 }
 .Contact .pContact {
   display: flex;

@@ -5,7 +5,7 @@
     .work {display: flex; flex-direction: column; justify-content: center; align-items: center;
         .workslogo{ 
             img{ width: 15vh;;}}
-        p{}}
+        p{@media (max-width: $smartphone) {display: none; text-align: center;}}}
     }
 }
 #esme {background-color:lightseagreen; padding: 2px;}

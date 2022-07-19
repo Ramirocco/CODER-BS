@@ -15,12 +15,12 @@
         a{
             img{ width: 50px; margin: 1vh;}}}}
 
-            .Contact{ display: flex;flex-direction:column;width: 99vw;align-items: center;justify-self:center;
-                .tituloContact{ display: flex;
+            .Contact{ display: flex;flex-direction:column;width: 99vw;align-items: center;justify-self:center;margin-top: 5px;
+                .tituloContact{ display: flex; 
                     h2{@extend .size-title; padding:0 0 15px 0 ; @media (max-width: $smartphone) {text-align: center;}}}
                 div{display: flex; justify-content:center; align-items: center;
                     div{ display: flex; flex-direction: column; margin-right: 2vw;
-                    img{width: 10vw;}}}
+                    img{width: 10vw; @media (max-width: $smartphone) {display: none;}}}}
                 .pContact {display: flex; flex-direction: column; @extend .bgservicios; width: 55vw; padding: 3vh 0;
                     p{@extend .size-small;text-align: center ; padding: 0 2vw; @media (max-width: $smartphone) { text-align: center;justify-content: start;
                     }}}
