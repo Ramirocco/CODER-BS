@@ -2,6 +2,13 @@ main {
     grid-area: main;        
     flex-direction: column;
     width: 100vw;
+    .textoh1{@extend .size-title;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: underline;
+        padding: 15px;}
     .tarjeta{width: 100%; padding: 5px 0; 
         .hero {
         display: flex;
@@ -56,13 +63,13 @@ main {
                 &:hover {color: map-get($map: $pallete, $key: primario);
                 background-color: map-get($map: $pallete, $key: cuaternario );}
                 }
-            }
-            .des {
+            
+            .Des {
                 justify-content: center; margin: 2vw 0;
                 .pdes {
-                    text-align: center; padding-top: 30px;
+                    text-align: center; padding: 10px;
                 }
-            }
+            }}
     }
 }
 

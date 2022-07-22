@@ -26,7 +26,7 @@
 }
 
 .size-title {
-    @include letras('Montserrat', calc(2rem + 1.5vw), 400, map-get($map: $pallete, $key: secundario));
+    @include letras('Montserrat', calc(1.5rem + 1.3vw), 400, map-get($map: $pallete, $key: secundario));
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
@@ -41,6 +41,9 @@ span {
     margin: 0 1ex;
 }
 
+.activo {
+    @include letras('Montserrat', calc(0.80rem + 0.9vw), 550 , map-get($map: $pallete, $key: secundario));
+}
 
 #activo {
     @include letras('Montserrat', calc(0.80rem + 0.9vw), 550 , map-get($map: $pallete, $key: secundario));

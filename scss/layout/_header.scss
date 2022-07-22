@@ -36,7 +36,7 @@
             margin     : 0 5px;
             text-align : center;
             line-height: 1.3rem;
-            .activo {@extend #activo; }
+            .activo {@extend .activo; }
             a { @extend .size-header;
                 text-decoration: none;
                 color          : map-get($map: $pallete, $key: secundario)
@@ -67,19 +67,20 @@
 
 .nav__item::after{content:"";
     display: block;
-    background: white;
-    height: 3px;
-    width: 90% ;
+    background: map-get($map:$pallete , $key: secundario);
+    height: auto;
+    padding-top: 5px;
+    width: 100% ;
     margin-top: 3px;
 clip-path: var(--clippy);
-transition: clip-path .5s;} 
+transition: clip-path .9s;} 
 
 .nav__item:hover {--clippy: polygon(0 0, 100% 0%, 100% 100%, 0 100%);color: black;}
 
 .nav__menu{ display: grid;grid-auto-flow: column; gap: 1em;}
 
 
-@media (max-width:760px){.nav__label{display: block; cursor: pointer;}
+@media (max-width:760px){.nav__label{display: block; cursor: pointer; padding: 20px;}
 
     .nav__menu{ position:absolute;
     // top:40px ;
@@ -91,11 +92,10 @@ transition: clip-path .5s;}
     flex-wrap: wrap;
     align-items: center;
     clip-path: circle( 0 at center);
-    text-decoration: underline;
     transition: clip-path 1s ease-in-out;
     }
 
-    .nav__item{ width: 30%; align-items: center;text-align: center;text-transform: uppercase; font-weight: 600;}
+    .nav__item{ width: auto; align-items: center;text-align: center;text-transform: uppercase; padding: 5px 5px;}
 .nav__input:checked + .nav__menu { clip-path: circle(100% at center);background-color: map-get($map:$pallete, $key: terciario );
 }
 }
